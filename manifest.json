@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "One Click Copy",
+  "version": "1.0.0",
+  "description": "NO More CTRL+C and CTRL+V!",
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["Content.js"]
+    }
+  ]
+}
